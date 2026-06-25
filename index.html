@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - 14 Days</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;800&family=Comic+Neue:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1 id="mainTitle">JavaScript 🚀</h1>
+            <p>14 Days of Fun Coding Mini Projects!</p>
+        </header>
+
+        <main class="grid">
+
+            <!-- Day 1: Variables -->
+            <div class="card glass">
+                <div class="card-header">
+                    <div class="header-top">
+                        <span class="day-badge">Day 1</span>
+                        <h2>Magic Boxes</h2>
+                    </div>
+                    <p class="topic-desc"><span>Topic:</span> let, const, var</p>
+                </div>
+                <div class="kid-explainer">
+                    🤖 <b>Kid's Corner:</b> Variables are like boxes. 'let' lets you swap the toy inside. 'const' is a
+                    locked safe. 'var' is just an old box!
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input type="text" id="varInput" placeholder="Name a new toy (e.g., Robot)">
+                    </div>
+                    <div class="input-group flex-row" style="flex-wrap: wrap;">
+                        <button id="btnLet" class="btn primary flex-btn"
+                            style="padding: 0.5rem; font-size: 0.9rem;">Swap in 'let'</button>
+                        <button id="btnConst" class="btn secondary flex-btn"
+                            style="padding: 0.5rem; font-size: 0.9rem;">Swap in 'const'</button>
+                    </div>
+                    <div id="varResult" class="result" style="font-size: 0.9rem;">Waitng to swap toys...</div>
+                </div>
+            </div>
+
+            <!-- Day 2: Data Types -->
+            <div class="card glass">
+                <div class="card-header">
+                    <div class="header-top">
+                        <span class="day-badge">Day 2</span>
+                        <h2>Age Calculator</h2>
+                    </div>
+                    <p class="topic-desc"><span>Topic:</span> Data Types, Operators</p>
+                </div>
+                <div class="kid-explainer">
+                    🤖 <b>Kid's Corner:</b> We use Numbers (Math) to find how old you are! Current Year MINUS your Birth
+                    Year.
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input type="number" id="birthYear" placeholder="Year you were born (e.g. 2015)">
+                    </div>
+                    <button id="calcAgeBtn" class="btn secondary">Calculate My Age!</button>
+                    <div id="ageResult" class="result">Let's find out...</div>
+                </div>
+            </div>
+
+            <!-- Day 3: Conditions -->
+            <div class="card glass">
+                <div class="card-header">
+                    <div class="header-top">
+                        <span class="day-badge">Day 3</span>
+                        <h2>Making Choices!</h2>
+                    </div>
+                    <p class="topic-desc"><span>Topic:</span> if, else, switch</p>
+                </div>
+                <div class="kid-explainer">
+                    🤖 <b>Kid's Corner:</b> 'If' it rains -> take umbrella. 'Else' -> wear sunglasses! 'Switch' is like
+                    pressing a button for a specific flavor.
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input type="text" id="conditionInput" placeholder="Weather (Rain/Sun) OR Flavor (Apple/Mango)">
+                    </div>
+                    <div class="input-group flex-row">
+                        <button id="btnIfElse" class="btn primary flex-btn" style="padding: 0.6rem;">If/Else
+                            (Weather)</button>
+                        <button id="btnSwitch" class="btn secondary flex-btn" style="padding: 0.6rem;">Switch
+                            (Flavor)</button>
+                    </div>
+                    <div id="conditionResult" class="result">What should we do?</div>
+                </div>
+            </div>
+
+            <!-- Day 4: Loops -->
+            <div class="card glass">
+                <div class="card-header">
+                    <div class="header-top">
+                        <span class="day-badge">Day 4</span>
+                        <h2>Jumping Loops!</h2>
+                    </div>
+                    <p class="topic-desc"><span>Topic:</span> for, while, do while</p>
+                </div>
+                <div class="kid-explainer">
+                    🤖 <b>Kid's Corner:</b> Loops do things again and again without getting tired! Let's jump multiple
+                    times!
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input type="number" id="jumpNum" placeholder="How many times to jump? (e.g. 3)">
+                    </div>
+                    <div class="input-group flex-row" style="flex-wrap: wrap;">
+                        <button id="btnFor" class="btn primary flex-btn" style="padding: 0.5rem; font-size: 0.9rem;">For
+                            Loop</button>
+                        <button id="btnWhile" class="btn secondary flex-btn"
+                            style="padding: 0.5rem; font-size: 0.9rem;">While Loop</button>
+                    </div>
+                    <div id="loopResult" class="result"
+                        style="text-align: left; white-space: pre-line; font-size: 0.85rem;">Ready to jump...</div>
+                </div>
+            </div>
+
+            <!-- Day 5: Functions -->
+            <div class="card glass">
+                <div class="card-header">
+                    <div class="header-top">
+                        <span class="day-badge">Day 5</span>
+                        <h2>Helper Robots (Functions)</h2>
+                    </div>
+                    <p class="topic-desc"><span>Topic:</span> Functions</p>
+                </div>
+                <div class="kid-explainer">
+                    🤖 <b>Kid's Corner:</b> A Function is like a Helper Robot. You give it ingredients, and it gives you
+                    a pizza!
+                </div>
+                <div class="card-body">
+                    <div class="input-group flex-row">
+                        <input type="number" id="numA" placeholder="Number 1">
+                        <input type="number" id="numB" placeholder="Number 2">
+                    </div>
+                    <button id="callRobotBtn" class="btn primary">Ask Robot to Add!</button>
+                    <div id="robotResult" class="result">Robot is waiting...</div>
+                </div>
+            </div>
+
+            <!-- Day 6: Arrays -->
+            <div class="card glass">
+                <div class="card-header">
+                    <div class="header-top">
+                        <span class="day-badge">Day 6</span>
+                        <h2>Toy Train (Arrays)</h2>
+                    </div>
+                    <p class="topic-desc"><span>Topic:</span> Arrays (push, pop)</p>
+                </div>
+                <div class="kid-explainer">
+                    🤖 <b>Kid's Corner:</b> An Array is like a Toy Train. 'Push' adds a new coach. 'Pop' removes the
+                    last coach!
+                </div>
+                <div class="card-body">
+                    <div class="input-group flex-row">
+                        <input type="text" id="newToy" placeholder="Toy Name">
+                        <button id="pushToyBtn" class="btn primary flex-btn" style="padding: 0.5rem;">Push
+                            (Add)</button>
+                        <button id="popToyBtn" class="btn secondary flex-btn" style="padding: 0.5rem;">Pop
+                            (Remove)</button>
+                    </div>
+                    <div id="trainDisplay" class="result" style="font-size: 1.5rem;">🚂 🚗 🧸</div>
+                </div>
+            </div>
+
+            <!-- Day 7: Objects -->
+            <div class="card glass">
+                <div class="card-header">
+                    <div class="header-top">
+                        <span class="day-badge">Day 7</span>
+                        <h2>Superhero ID Card</h2>
+                    </div>
+                    <p class="topic-desc"><span>Topic:</span> Objects</p>
+                </div>
+                <div class="kid-explainer">
+                    🤖 <b>Kid's Corner:</b> An Object holds details about one thing. Like a Superhero has a name, color,
+                    and power!
+                </div>
+                <div class="card-body">
+                    <button id="showHeroBtn" class="btn secondary">Show My Hero ID</button>
+                    <div id="heroResult" class="result" style="text-align: left; white-space: pre-line;">Click to see
+                        hero...</div>
+                </div>
+            </div>
+
+            <!-- Day 8: Array Methods -->
+            <div class="card glass">
+                <div class="card-header">
+                    <div class="header-top">
+                        <span class="day-badge">Day 8</span>
+                        <h2>Magic Spells (Array Methods)</h2>
+                    </div>
+                    <p class="topic-desc"><span>Topic:</span> map, filter</p>
+                </div>
+                <div class="kid-explainer">
+                    🤖 <b>Kid's Corner:</b> We have Candies: [2, 5, 10].<br>'Map' doubles them! 'Filter' keeps only big
+                    ones!
+                </div>
+                <div class="card-body">
+                    <div class="input-group flex-row" style="flex-wrap: wrap;">
+                        <button id="btnMap" class="btn primary flex-btn" style="padding: 0.5rem; font-size: 0.8rem;">Map
+                            (x2 Magic)</button>
+                        <button id="btnFilter" class="btn secondary flex-btn"
+                            style="padding: 0.5rem; font-size: 0.8rem;">Filter (>4 Candies)</button>
+                    </div>
+                    <div id="magicResult" class="result">Cast a spell!</div>
+                </div>
+            </div>
+
+            <!-- Day 9: DOM Manipulation -->
+            <div class="card glass">
+                <div class="card-header">
+                    <div class="header-top">
+                        <span class="day-badge">Day 9</span>
+                        <h2>Magic Wand (DOM)</h2>
+                    </div>
+                    <p class="topic-desc"><span>Topic:</span> Change HTML Elements</p>
+                </div>
+                <div class="kid-explainer">
+                    🤖 <b>Kid's Corner:</b> JS can act like a magic wand to change colors and text on the screen
+                    instantly!
+                </div>
+                <div class="card-body">
+                    <button id="domChangeBtn" class="btn secondary">Wave Magic Wand on Title!</button>
+                    <div class="result">(Look at the big title at the top)</div>
+                </div>
+            </div>
+
+            <!-- Day 10: Events Counter -->
+            <div class="card glass">
+                <div class="card-header">
+                    <div class="header-top">
+                        <span class="day-badge">Day 10</span>
+                        <h2>Action Events!</h2>
+                    </div>
+                    <p class="topic-desc"><span>Topic:</span> click, input</p>
+                </div>
+                <div class="kid-explainer">
+                    🤖 <b>Kid's Corner:</b> Events listen to what you do! When you click or type, the browser notices
+                    it!
+                </div>
+                <div class="card-body">
+                    <form id="eventForm" class="input-group" style="margin-bottom: 0;">
+                        <input type="text" id="eventInput" placeholder="Type something here...">
+                        <button type="button" id="eventClickBtn" class="btn primary" style="margin-top: 10px;">Click
+                            Me!</button>
+                    </form>
+                    <div id="eventResult" class="result" style="font-size: 0.9rem;">Do an action...</div>
+                </div>
+            </div>
+
+            <!-- Day 11: ES6 Features -->
+            <div class="card glass">
+                <div class="card-header">
+                    <div class="header-top">
+                        <span class="day-badge">Day 11</span>
+                        <h2>Modern Shortcuts (ES6)</h2>
+                    </div>
+                    <p class="topic-desc"><span>Topic:</span> Arrow Functions, Template Literals</p>
+                </div>
+                <div class="kid-explainer">
+                    🤖 <b>Kid's Corner:</b> ES6 is like a shortcut. Instead of writing long sentences, we use cool short
+                    symbols!
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input type="text" id="es6Name" placeholder="Your Name">
+                    </div>
+                    <button id="btnArrow" class="btn primary">Use Cool Shortcut Greeting</button>
+                    <div id="es6Result" class="result">Result goes here...</div>
+                </div>
+            </div>
+
+            <!-- Day 12: Call Public API -->
+            <div class="card glass">
+                <div class="card-header">
+                    <div class="header-top">
+                        <span class="day-badge">Day 12</span>
+                        <h2>Fetch (Talking to Internet)</h2>
+                    </div>
+                    <p class="topic-desc"><span>Topic:</span> Fetch API, Async</p>
+                </div>
+                <div class="kid-explainer">
+                    🤖 <b>Kid's Corner:</b> Fetch is like sending a pigeon to a faraway land to bring back a secret
+                    message!
+                </div>
+                <div class="card-body">
+                    <button id="fetchApiBtn" class="btn primary">Send Pigeon for Random Name</button>
+                    <div id="apiResult" class="result">Waiting for pigeon...</div>
+                </div>
+            </div>
+
+            <!-- Day 13: Local Storage -->
+            <div class="card glass">
+                <div class="card-header">
+                    <div class="header-top">
+                        <span class="day-badge">Day 13</span>
+                        <h2>Secret Backpack (Storage)</h2>
+                    </div>
+                    <p class="topic-desc"><span>Topic:</span> Local Storage</p>
+                </div>
+                <div class="kid-explainer">
+                    🤖 <b>Kid's Corner:</b> Local Storage is a backpack that remembers your toys even if you close the
+                    game!
+                </div>
+                <div class="card-body">
+                    <div class="input-group">
+                        <input type="text" id="storageInput" placeholder="Secret Word...">
+                    </div>
+                    <div class="input-group flex-row" style="flex-wrap: wrap;">
+                        <button id="btnLocal" class="btn primary flex-btn"
+                            style="padding: 0.5rem; font-size: 0.8rem;">Put in Backpack</button>
+                        <button id="btnRead" class="btn accent flex-btn"
+                            style="padding: 0.5rem; font-size: 0.8rem;">Check Backpack</button>
+                    </div>
+                    <div id="storageResult" class="result" style="font-size: 0.8rem;">Backpack is closed.</div>
+                </div>
+            </div>
+
+            <!-- Day 14: To-Do App -->
+            <div class="card glass todo-card">
+                <div class="card-header">
+                    <div class="header-top">
+                        <span class="day-badge">Day 14</span>
+                        <h2>My Fun To-Do List</h2>
+                    </div>
+                    <p class="topic-desc"><span>Topic:</span> Mini Project</p>
+                </div>
+                <div class="kid-explainer">
+                    🤖 <b>Kid's Corner:</b> Let's combine everything! Make a list of fun games to play today!
+                </div>
+                <div class="card-body">
+                    <div class="input-group flex-row">
+                        <input type="text" id="todoInput" placeholder="Add a game or task...">
+                        <button id="addTodoBtn" class="btn accent">+</button>
+                    </div>
+                    <ul id="todoList" class="todo-list">
+                        <!-- Tasks will appear here -->
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
