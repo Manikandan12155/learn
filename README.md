@@ -1,6 +1,6 @@
 # 🚀 JavaScript - 14 Days Fun Coding!
 
-Welcome to the **JavaScript for Kids** interactive playground! This repository contains a 14-day mini-project series designed to make learning JavaScript super fun, easy, and engaging for kids (and beginners!).
+Welcome to the **JavaScript** interactive playground! This repository contains a 14-day mini-project series designed to make learning JavaScript super fun, easy, and engaging for beginners!
 
 ## 🌟 View the Interactive UI Live!
 
